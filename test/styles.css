@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+/* Centering content with a max width */
+.container {
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto;    /* Center content on larger screens */
+    padding: 0 20px;   /* Padding for smaller screens */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1b33; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-title img.logo {
+    width: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+header .logo-title h1 {
+    font-size: 1.5rem; /* Portfolio name font size */
+    margin: 0;
+    font-weight: normal;
+}
+
+header nav a {
+    color: #ccc; /* Lighter color for non-active links */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav a.active {
+    font-weight: bold; /* Active link styling */
+    color: #fff; /* Active link in white */
+}
+
+header nav a:hover {
+    color: #fff; /* On hover, links turn white */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    height: 80vh;
+    background-color: #fafafa; /* Light background */
+    padding: 50px 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.hero-content {
+    max-width: 700px; /* Limit the width of the text content */
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: #1d1b33;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Shape Graphics */
+.shapes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%; /* Ensure shapes take full width */
+}
+
+.shape {
+    position: relative;
+    text-align: center;
+}
+
+.shape img {
+    width: 150px; /* Adjust size */
+}
+
+.shape span {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    left: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.shape-left span {
+    left: -30px; /* Adjust text placement if necessary */
+}
+
+.shape-right span {
+    right: -30px;
+}
+
+
+/* Project Gallery */
+.gallery {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto;    /* Center content on large screens */
+    padding: 0 20px;   /* Add padding for smaller screens */
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%; /* Ensure project takes full width of container */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.project-info h3 {
+    margin: 10px 0;
+}
+
+.project-info p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1b33; /* Same dark background as header */
+    color: #fff;
+}
+
+footer .linkedin a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .linkedin a img {
+    width: 30px;
+}
