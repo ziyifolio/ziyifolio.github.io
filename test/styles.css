@@ -1,4 +1,5 @@
 /* General Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,12 +9,11 @@ body {
     color: #333;
 }
 
-
 /* Centering content with a max width */
 .container {
-    max-width: 1200px; /* Maximum width for large screens */
-    margin: 0 auto;    /* Center content on larger screens */
-    padding: 0 20px;   /* Padding for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;    /* Center content on large screens */
+    padding: 0 20px;   /* Add padding for smaller screens */
 }
 
 /* Header */
@@ -22,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1d1b33; /* Dark background */
-    color: #fff; /* Light text */
+    background-color: #201b35; /* Dark background */
+    color: #fff;
 }
 
 header .logo-title {
@@ -32,18 +32,18 @@ header .logo-title {
 }
 
 header .logo-title img.logo {
-    width: 40px; /* Adjust logo size */
+    width: 40px;
     margin-right: 10px;
 }
 
 header .logo-title h1 {
-    font-size: 1.5rem; /* Portfolio name font size */
+    font-size: 1.5rem;
     margin: 0;
     font-weight: normal;
 }
 
 header nav a {
-    color: #ccc; /* Lighter color for non-active links */
+    color: #ccc;
     text-decoration: none;
     margin-left: 20px;
     font-size: 1rem;
@@ -52,28 +52,29 @@ header nav a {
 }
 
 header nav a.active {
-    font-weight: bold; /* Active link styling */
-    color: #fff; /* Active link in white */
+    font-weight: bold;
+    color: #fff;
 }
 
 header nav a:hover {
-    color: #fff; /* On hover, links turn white */
+    color: #fff;
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    justify-content: center;
-    height: 80vh;
-    background-color: #fafafa; /* Light background */
-    padding: 50px 20px;
-    text-align: left; /* Align text to the left */
+   
+    padding: 50px 0;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;    /* Center the container */
+    padding: 0 20px;   /* Padding for smaller screens */
+    text-align: left;  /* Left-align text inside the container */
 }
 
 .hero-content {
-    max-width: 700px; /* Limit the width of the text content */
+    max-width: 100%; /* Allow the content to take full width of the container */
     margin-bottom: 50px;
 }
 
@@ -89,7 +90,6 @@ header nav a:hover {
     color: #888;
 }
 
-/* Shape Graphics */
 .shapes {
     display: flex;
     justify-content: center;
@@ -117,52 +117,147 @@ header nav a:hover {
     font-family: 'Arial', sans-serif;
 }
 
-.shape-left span {
-    left: -30px; /* Adjust text placement if necessary */
-}
-
-.shape-right span {
-    right: -30px;
-}
-
-
 /* Project Gallery */
 .gallery {
-    background-color: #fff;
+    
     padding: 50px 0;
 }
 
-.container {
-    max-width: 1200px; /* Set maximum width */
-    margin: 0 auto;    /* Center content on large screens */
-    padding: 0 20px;   /* Add padding for smaller screens */
+/* Gallery Title */
+.gallery-title {
+    font-size: 2.5rem;        /* Same as hero title font size */
+    line-height: 1.4;         /* Same line height */
+    color: #1d1b33;           /* Same color */
+    margin-bottom: 30px;      /* Add some space below the title */
+    text-align: left;         /* Align title to the left */
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    overflow: hidden;
-    width: 100%; /* Ensure project takes full width of container */
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-}
-
-.project-info {
+    /*border-bottom: 2px solid #ddd;*/
     padding: 20px;
-    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover */
 }
 
-.project-info h3 {
-    margin: 10px 0;
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.project-info p {
-    margin: 0;
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1d1b33;
+}
+
+.tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #352654;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between; /* Align date to the left and view more to the right */
+    align-items: center;            /* Vertically center both items */
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 20px;               /* Add space above the date and view more */
+    padding-right: 20px;            /* Add some padding to align the view more link */
+    width: 100%;                    /* Ensure the meta takes the full card width */
+}
+
+.project-meta span {
+    margin-left: 0;                 /* Ensure date aligns with the card */
+}
+
+.project-meta .view-more {
+    text-decoration: none;
+    color: #352654;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.project-meta .view-more:hover {
+    border-color: #f4702d;
+}
+
+
+
+/* Divider line */
+.divider {
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Image Content */
+.image-content {
+    flex: 1;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* Hover Effect */
+.project:hover {
+    background-color: #201b350a;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 15px;
+    border-bottom: none;
+    border: 1px solid #ddd;
+    */
+}
+
+.project:hover .image-content img {
+    transform: scale(1.05);
+}
+
+.project:hover .view-more {
+    color: #f4702d;
+    font-weight: 600;
+}
+
+.project:hover .divider {
+    border-bottom: 3px solid #f4702d;
 }
 
 /* Footer */
@@ -172,7 +267,7 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: #1d1b33; /* Same dark background as header */
-    color: #fff;
+    color: #fff; /* Same text color as header */
 }
 
 footer .linkedin a {
