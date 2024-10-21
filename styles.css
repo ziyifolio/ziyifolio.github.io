@@ -10,6 +10,24 @@ body {
 
 
 /* Fonts Styles */
+h1 {
+    font-family: 'Lato', sans-serif;  /* Set the font to Lato */
+    font-size: 64px;                  /* Set font size to 64px */
+    font-weight: 400;                 /* Use a font weight of 400 */
+    line-height: 1.2em;              /* Set line height to 1.2em, means 1.2*64 */
+    color: #1a1b1f;                 /* Default color */
+    /* margin-bottom: 20px; */             /* Add space below the heading */
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;  /* Set the font to Lato */
+    font-size: 32px;                 
+    font-weight: 400;                 
+    line-height: 1.2em;              
+    color: #1a1b1f;                 /* Default color */
+}
+
+
 /* Label Style Class */
 .label {
     font-family: 'Montserrat', sans-serif;  /* Use Montserrat font */
@@ -48,31 +66,41 @@ header .logo-title img.logo {
 }
 
 
-header nav a {
+.navigation a {
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 36px;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    position:relative;
+    transition:all 0.3s ease;
+    /* font-weight: 600; */
 }
 
-header nav a.active {
-    font-weight: bold;
+
+
+.navigation a.active {
+    font-weight: 600;
     color: #fff;
 }
 
-header nav a:hover {
+.navigation a:hover {
+    /* font-weight: 600; */
     color: #fff;
 }
+
+.navigation a:active {
+    top:1px;
+}
+
 
 /* Hero Section */
 .hero {
-   
     padding: 50px 0;
 }
 
 .hero .container {
-    max-width: 1200px;
+    max-width: 1152px;
     margin: 0 auto;    /* Center the container */
     padding: 0 20px;   /* Padding for smaller screens */
     text-align: left;  /* Left-align text inside the container */
@@ -84,9 +112,7 @@ header nav a:hover {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    line-height: 1.4;
-    color: #1d1b33;
+    color: #302850 ;
     margin-bottom: 20px;
 }
 
@@ -124,24 +150,22 @@ header nav a:hover {
 
 /* Project Gallery */
 .gallery {
-    
-    padding: 50px 0;
+    padding: 64px 0;
 }
 
 /* Gallery Title */
 .gallery-title {
-    font-size: 2.5rem;        /* Same as hero title font size */
-    line-height: 1.4;         /* Same line height */
-    color: #1d1b33;           /* Same color */
-    margin-bottom: 30px;      /* Add some space below the title */
+    color: #302850;           /* Dark03 */
+    margin-left: 48px;
+    margin-bottom: 40px;      /* Add some space below the title */
     text-align: left;         /* Align title to the left */
 }
 
 .project {
     /*border-bottom: 2px solid #ddd;*/
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    padding: 48px;
+    margin-bottom: 40px;
+    border-radius: 8px;
     /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover */
 }
@@ -154,8 +178,9 @@ header nav a:hover {
 
 .project-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;    /* Align items to the top */
+    gap: 20px;                  /* Space between the text and image */
+    flex-wrap: wrap;            /* Allow wrapping on smaller screens */
 }
 
 .text-content {
@@ -164,24 +189,22 @@ header nav a:hover {
 }
 
 .text-content h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #1d1b33;
+    margin-bottom: 20px;
+    color: #1a1b1f;
 }
 
 .tags {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .tag {
     display: inline-block;
     background-color: #352654;
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
     font-size: 0.9rem;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .text-content p {
@@ -232,9 +255,12 @@ header nav a:hover {
 
 /* Image Content */
 .image-content {
-    flex: 1;
+    /* flex: 1; */
     max-width: 500px;
+    height: 300px;
     padding-left: 20px;
+    padding-bottom: 20px;
+    flex-shrink: 0;             /* Prevent the image from shrinking */
 }
 
 .image-content img {
@@ -264,7 +290,7 @@ header nav a:hover {
 
 .project:hover .view-more {
     color: #f4702d;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .project:hover .divider {
