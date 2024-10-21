@@ -124,8 +124,11 @@ header .logo-title img.logo {
 .shapes {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 400px;
     width: 100%; /* Ensure shapes take full width */
+    margin-top: 80px;
+
+    
 }
 
 .shape {
@@ -133,8 +136,20 @@ header .logo-title img.logo {
     text-align: center;
 }
 
+/* Continuous Rotation */
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .shape img {
-    width: 150px; /* Adjust size */
+    width: 360px; /* Adjust size */
+    animation: rotateImage 10s linear infinite;  /* Rotate continuously */
 }
 
 .shape span {
@@ -265,7 +280,7 @@ header .logo-title img.logo {
 
 .image-content img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }

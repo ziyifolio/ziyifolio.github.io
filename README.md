@@ -17,4 +17,6 @@ Fonts
 
 
 TODO
-1.how to change the max size of the project card, so it is 1024+48, the text can be aligned with the title
+1.footer 
+2.Add sustainovation project
+3.Hero animation hover effect
