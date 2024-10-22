@@ -323,10 +323,119 @@ footer {
 }
 
 footer .linkedin a {
-    color: #fff;
+    font-size: 24px; 
+    color: #ccc;
     text-decoration: none;
 }
 
-footer .linkedin a img {
-    width: 24px;
+footer .linkedin a:hover {
+    color: #fff;                            /* Change icon color on hover */
+}
+
+
+/* About Page */
+/* About Body Section */
+.about-body {
+    max-width: 1200px;           /* Set maximum width */
+    margin: 0 auto;              /* Center the section horizontally */
+    padding: 50px 20px;          /* Add some padding */
+}
+
+/* Introduction Section */
+.intro-section {
+    display: flex;
+    gap: 64px;                   /* Space between image and text */
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.intro-image img {
+    width: 500px;                /* Set image width */
+    border-radius: 8px;         /* Rounded corners */
+    object-fit: cover;           /* Ensure proper image fit */
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.greeting {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #888;                 /* Light gray for greeting text */
+    margin-bottom: 10px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #1d1b33;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.btn-linkedin {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #352655;   /* Button color */
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-linkedin:hover {
+    background-color: #564675;   /* Darken button on hover */
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;                   /* Space between each capability group */
+    margin-bottom: 40px;
+}
+
+.skills-section > div {
+    flex: 1;
+    min-width: 220px;            /* Ensure minimum width */
+}
+
+.skills-section h2,
+.skills-section h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #1d1b33;
+    margin-bottom: 20px;
+}
+
+.experience p {
+    font-size: 1rem;
+    color: #666;                 /* Light gray text */
+}
+
+.capabilities,
+.toolbox,
+.off-screen {
+    color: #352655;              /* Purple color for headings */
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-section ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
 }

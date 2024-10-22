@@ -17,6 +17,5 @@ Fonts
 
 
 TODO
-1.footer 
 2.Add sustainovation project
 3.Hero animation hover effect
