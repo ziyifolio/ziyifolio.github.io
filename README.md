@@ -7,7 +7,10 @@ Colors
     Background #FAFAFA
     Default #1a1b1f
 
-    Dark03 #302850  /primary, used for the container of header and footer/
+    NotWhite #ccc
+
+    Dark03 #302850  /primary, used for the container of header and footer,project card divider /
+     #574b85 /used for the highlight text, hover/
 
 
 Fonts

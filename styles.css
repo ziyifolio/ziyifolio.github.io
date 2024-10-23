@@ -1,6 +1,7 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +33,7 @@ h2 {
 .label {
     font-family: 'Montserrat', sans-serif;  /* Use Montserrat font */
     font-size: 16px;                        /* Default size of 16px */
-    font-weight: 400;                       /* Regular Montserrat */
+    font-weight: 500;                       /* Regular Montserrat */
     color: inherit;                         /* Inherit color to ensure consistency with parent */
 }
 
@@ -55,7 +56,7 @@ header {
 }
 
 header .logo-title {
-    color: #fff;
+    color: #ccc;
     display: flex;
     align-items: center;
 }
@@ -159,7 +160,7 @@ header .logo-title img.logo {
     left: 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #333;
+    /* color: #333; */
     font-family: 'Arial', sans-serif;
 }
 
@@ -226,7 +227,7 @@ header .logo-title img.logo {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333;
+    /* color: #333; */
 }
 
 .project-meta {
@@ -234,7 +235,7 @@ header .logo-title img.logo {
     justify-content: space-between; /* Align date to the left and view more to the right */
     align-items: center;            /* Vertically center both items */
     font-size: 0.9rem;
-    color: #333;
+    /* color: #333; */
     margin-top: 20px;               /* Add space above the date and view more */
     padding-right: 20px;            /* Add some padding to align the view more link */
     width: 100%;                    /* Ensure the meta takes the full card width */
@@ -246,7 +247,7 @@ header .logo-title img.logo {
 
 .project-meta .view-more {
     text-decoration: none;
-    color: #352654;
+    color: #574b85;
     font-weight: 500;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -262,10 +263,11 @@ header .logo-title img.logo {
 /* Divider line */
 .divider {
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid  #302850;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    position:relative;
 }
 
 /* Image Content */
@@ -309,7 +311,7 @@ header .logo-title img.logo {
 }
 
 .project:hover .divider {
-    border-bottom: 3px solid #f4702d;
+    border-bottom: 2px solid #f4702d;
 }
 
 /* Footer */
@@ -319,7 +321,7 @@ footer {
     align-items: center;
     padding: 32px;
     background-color: #302850; /* Dark03, Same dark background as header */
-    color: #fff; /* Same text color as header */
+    color: #ccc; /* Same text color as header */
 }
 
 footer .linkedin a {
@@ -350,8 +352,8 @@ footer .linkedin a:hover {
 }
 
 .intro-image img {
-    width: 500px;                /* Set image width */
-    border-radius: 8px;         /* Rounded corners */
+    width: 600px;                /* Set image width */
+    border-radius: 4px;         /* Rounded corners */
     object-fit: cover;           /* Ensure proper image fit */
 }
 
@@ -366,23 +368,23 @@ footer .linkedin a:hover {
     margin-bottom: 10px;
 }
 
-.intro-text h1 {
-    font-size: 2.5rem;
+.intro-text h2 {
+/*     font-size: 2.5rem;
     font-weight: 400;
-    color: #1d1b33;
+    color: #1d1b33; */
     margin-bottom: 20px;
 }
 
 .description {
     line-height: 1.6;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .btn-linkedin {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #352655;   /* Button color */
+    background-color: #302850;   /* Button color */
     color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -392,7 +394,8 @@ footer .linkedin a:hover {
 }
 
 .btn-linkedin:hover {
-    background-color: #564675;   /* Darken button on hover */
+    /* background-color: #564675;   Darken button on hover */
+    background-color: #574b85;
 }
 
 /* Skills Section */
@@ -403,17 +406,16 @@ footer .linkedin a:hover {
     margin-bottom: 40px;
 }
 
+.experience {
+    padding-right: 64px;
+}
+
 .skills-section > div {
     flex: 1;
     min-width: 220px;            /* Ensure minimum width */
 }
 
-.skills-section h2,
-.skills-section h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #1d1b33;
+.skills-section h2 {
     margin-bottom: 20px;
 }
 
@@ -422,20 +424,28 @@ footer .linkedin a:hover {
     color: #666;                 /* Light gray text */
 }
 
+
+.skills-section .label{
+    /* font-weight: 600; */
+    color: #574b85;              /* Purple color for headings */
+}
+
+
 .capabilities,
 .toolbox,
-.off-screen {
-    color: #352655;              /* Purple color for headings */
+.off-screen{
+    margin-top: 20px;
 }
+
+
 
 .skills-section ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 20px;
 }
 
 .skills-section ul li {
     font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
