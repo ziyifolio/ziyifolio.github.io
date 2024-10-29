@@ -20,5 +20,7 @@ Fonts
 
 
 TODO
-2.Add sustainovation project
-3.Hero animation hover effect
+- Add sustainovation project
+- Concept playground gallery
+- Hero animation hover effect
+
