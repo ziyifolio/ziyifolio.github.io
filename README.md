@@ -14,7 +14,11 @@ Colors
 
 
 Fonts
-    H1: Lato 64px, 1.2 rem line height, no margin-bottom: 
+
+    H1: Lato 64px, regular(400), 1.2 rem line height, no margin-bottom: 
+    H2: Lato 32px, regular(400),1.2 rem line height, no margin-bottom: 
+    H3: Lato 24px, bold(700), 1.2 rem line height, no margin-bottom: 
+    H4: Lato 20px, regular(400), 1.2 rem line height, no margin-bottom:
     Label: Montserrat 16px, 
 
 

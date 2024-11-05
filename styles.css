@@ -1,3 +1,10 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,6 +18,12 @@ body {
 
 
 /* Fonts Styles */
+p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
     font-size: 64px;                  /* Set font size to 64px */
@@ -23,6 +36,22 @@ h1 {
 h2 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
     font-size: 32px;                 
+    font-weight: 400;                 
+    line-height: 1.2em;              
+    color: #1a1b1f;                 /* Default color */
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;  /* Set the font to Lato */
+    font-size: 24px;                 
+    font-weight: 700;                 
+    line-height: 1.2em;              
+    color: #1a1b1f;                 /* Default color */
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;  /* Set the font to Lato */
+    font-size: 20px;                 
     font-weight: 400;                 
     line-height: 1.2em;              
     color: #1a1b1f;                 /* Default color */
@@ -223,12 +252,7 @@ header .logo-title img.logo {
     margin-right: 12px;
 }
 
-.text-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    /* color: #333; */
-}
+
 
 .project-meta {
     display: flex;
@@ -448,4 +472,56 @@ footer .linkedin a:hover {
 .skills-section ul li {
     font-size: 1rem;
     margin-bottom: 12px;
+}
+
+
+
+/* Project Page */
+.project-intro {
+    padding: 40px 40px;          /* Add padding for spacing */
+    margin: 60px auto;              /* Center the section horizontally */
+    margin-top: 0px;
+    text-align: center;   
+}
+
+.featured-image img {
+    width: 100%;                 /* Full width within container */
+    max-width: 1000px;           /* Set maximum width for the image */
+    border-radius: 10px;         /* Optional: rounded corners */
+}
+
+.title-section h1 {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+/* Information Blocks Section */
+.info-blocks {
+    display: flex;
+    flex-wrap: wrap;                  /* Allow wrapping on smaller screens */
+    gap: 40px;                        /* Space between information blocks */
+    justify-content: space-between;   /* Spread out information blocks */
+    text-align: left;
+}
+
+.info-block {
+    flex: 1;                          /* Allow equal space for each block */
+    min-width: 200px;                 /* Ensure a minimum width for blocks */
+}
+
+.info-blocks h4{
+    margin-bottom: 16px;
+}
+
+/* Make the "In Short" block twice as wide */
+.info-block.in-short {
+    flex: 2;                          /* Make the "In Short" block twice the size */
+}
+
+
+.img-project img {
+    width: 100%;                  /* Make each image take the full width of the container */
+    display: block;               /* Remove any unwanted inline spacing */
+    margin-bottom: 60px;          /* Add spacing between each image */
+    object-fit: cover;            /* Ensures image fits properly without stretching */
 }
