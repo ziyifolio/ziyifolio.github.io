@@ -154,8 +154,8 @@ header .logo-title img.logo {
 .shapes {
     display: flex;
     justify-content: center;
-    gap: 400px;
-    width: 100%; /* Ensure shapes take full width */
+    gap: 33%;
+    /* width: 100%; Ensure shapes take full width */
     margin-top: 80px;
 
     
@@ -178,7 +178,8 @@ header .logo-title img.logo {
 
 
 .shape img {
-    width: 360px; /* Adjust size */
+    width: 30dvw;
+    max-width: 360px; /* Adjust size */
     animation: rotateImage 10s linear infinite;  /* Rotate continuously */
 }
 
@@ -238,9 +239,6 @@ header .logo-title img.logo {
     color: #1a1b1f;
 }
 
-.tags {
-    margin-bottom: 16px;
-}
 
 .tag {
     display: inline-block;
@@ -250,6 +248,7 @@ header .logo-title img.logo {
     border-radius: 4px;
     font-size: 0.9rem;
     margin-right: 12px;
+    margin-bottom: 16px;
 }
 
 
