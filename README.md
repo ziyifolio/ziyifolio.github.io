@@ -25,7 +25,8 @@ Fonts
 
 TODO
 - Add sustainovation project
-    -add back button
+    -add a back button
+    -change project page name to lower case
 - Concept playground gallery
 - Hero animation hover effect
 

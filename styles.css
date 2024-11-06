@@ -405,21 +405,25 @@ footer .linkedin a:hover {
     margin-bottom: 40px;
 }
 
-.btn-linkedin {
+.btn-primary {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #302850;   /* Button color */
+    background-color: #302850;   /* Dark03 */
     color: #fff;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-.btn-linkedin:hover {
-    /* background-color: #564675;   Darken button on hover */
+.btn-primary:hover {
+    /*  Lighten button on hover */
     background-color: #574b85;
+}
+
+.btn-back {
+    margin-bottom: 48px;
 }
 
 /* Skills Section */
