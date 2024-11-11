@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+
+/* Unlike content-box (default), border-box prevents the element’s total size from unexpectedly
+expanding due to padding or borders. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
