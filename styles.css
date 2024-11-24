@@ -30,12 +30,12 @@ body {
 p {
     font-size: 1rem;
     line-height: 1.4;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 h1 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
-    font-size: 64px;                  /* Set font size to 64px */
+    font-size: 4rem;                  /* Set font size to 64px */
     font-weight: 400;                 /* Use a font weight of 400 */
     line-height: 1.2em;              /* Set line height to 1.2em, means 1.2*64 */
     color: #1a1b1f;                 /* Default color */
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
-    font-size: 32px;                 
+    font-size: 2rem;                  /* Set font size to 32px */        
     font-weight: 400;                 
     line-height: 1.2em;              
     color: #1a1b1f;                 /* Default color */
@@ -52,7 +52,7 @@ h2 {
 
 h3 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
-    font-size: 24px;                 
+    font-size: 1.5rem;                 /* Set font size to 24px */
     font-weight: 700;                 
     line-height: 1.2em;              
     color: #1a1b1f;                 /* Default color */
@@ -60,7 +60,7 @@ h3 {
 
 h4 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
-    font-size: 20px;                 
+    font-size: 1.25rem;               /* Set font size to 20px */  
     font-weight: 400;                 
     line-height: 1.2em;              
     color: #1a1b1f;                 /* Default color */
@@ -70,7 +70,7 @@ h4 {
 /* Label Style Class */
 .label {
     font-family: 'Montserrat', sans-serif;  /* Use Montserrat font */
-    font-size: 16px;                        /* Default size of 16px */
+    font-size: 1rem;                        /* Default size of 16px */
     font-weight: 500;                       /* Regular Montserrat */
     color: inherit;                         /* Inherit color to ensure consistency with parent */
 }
@@ -211,17 +211,15 @@ header .logo-title img.logo {
 /* Gallery Title */
 .gallery-title {
     color: #302850;           /* Dark03 */
-    margin-left: 48px;
+    margin-left: 4%;
     margin-bottom: 40px;      /* Add some space below the title */
     text-align: left;         /* Align title to the left */
 }
 
 .project {
-    /*border-bottom: 2px solid #ddd;*/
-    padding: 48px;
-    margin-bottom: 40px;
+    padding: 4%;
+    margin-bottom: 60px;
     border-radius: 8px;
-    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover */
 }
 
@@ -266,8 +264,8 @@ header .logo-title img.logo {
     display: flex;
     justify-content: space-between; /* Align date to the left and view more to the right */
     align-items: center;            /* Vertically center both items */
-    font-size: 0.9rem;
     /* color: #333; */
+    gap: 24px; /* Increase spacing between stacked items */
     margin-top: 20px;               /* Add space above the date and view more */
     padding-right: 20px;            /* Add some padding to align the view more link */
     width: 100%;                    /* Ensure the meta takes the full card width */
@@ -306,19 +304,18 @@ header .logo-title img.logo {
 .image-content {
     /* flex: 1; */
     max-width: 500px;
-    height: 300px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding-bottom: 20px; 
     flex-shrink: 0;             /* Prevent the image from shrinking */
 }
 
 .image-content img {
     width: 100%;
+    max-height: 400px;
     border-radius: 4px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
 
 
 
@@ -351,6 +348,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px; /* Adds 16px spacing between items */
+    align-items: flex-start; /* Align items to the top of the row */
     padding: 32px;
     background-color: #302850; /* Dark03, Same dark background as header */
     color: #ccc; /* Same text color as header */
@@ -384,7 +383,7 @@ footer .linkedin a:hover {
 }
 
 .intro-image img {
-    width: 600px;                /* Set image width */
+    max-width: 600px;                /* Set image width */
     border-radius: 4px;         /* Rounded corners */
     object-fit: cover;           /* Ensure proper image fit */
 }
@@ -410,7 +409,7 @@ footer .linkedin a:hover {
 .description {
     line-height: 1.6;
     color: #333;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
 }
 
 .btn-primary {
@@ -490,8 +489,8 @@ footer .linkedin a:hover {
 
 /* Project Page */
 .project-intro {
-    padding: 40px 40px;          /* Add padding for spacing */
-    margin: 60px auto;              /* Center the section horizontally */
+    padding: 3% 3%;          /* Add padding for spacing */
+    margin: 6% auto;              /* Center the section horizontally */
     margin-top: 0px;
     text-align: center;   
 }
@@ -511,7 +510,7 @@ footer .linkedin a:hover {
 .info-blocks {
     display: flex;
     flex-wrap: wrap;                  /* Allow wrapping on smaller screens */
-    gap: 40px;                        /* Space between information blocks */
+    gap: 3%;                        /* Space between information blocks */
     justify-content: space-between;   /* Spread out information blocks */
     text-align: left;
 }
@@ -536,4 +535,58 @@ footer .linkedin a:hover {
     display: block;               /* Remove any unwanted inline spacing */
     margin-bottom: 60px;          /* Add spacing between each image */
     object-fit: cover;            /* Ensures image fits properly without stretching */
+}
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    
+    .navigation a {
+        margin-left: 8px;
+
+    }
+    
+
+    footer {
+        padding: 20px;
+    }
+    
+    .image-content {
+        /* padding-left: 10px; Adjust padding for smaller screens */
+        padding-bottom: 10px;
+    }
+
+    .image-content img {
+        max-height: unset; /* Remove the height limit for better scaling */
+    }
+
+    .intro-image img {
+        width: 80vw;                /* Set image width */
+    }
+
+    .text-content h2 {
+        text-align: center;
+    }
+
+
+    .text-content {
+        text-align: center;
+    }
+
+    .intro-section {
+        flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        gap: 32px;
+    }
+
+    .shapes {
+        gap: 3%;
+    }
+
+    .shape img {
+        width: 50dvw;
+    }
 }
