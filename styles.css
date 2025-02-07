@@ -343,6 +343,30 @@ header .logo-title img.logo {
     border-bottom: 2px solid #f4702d;
 }
 
+/* Playground */
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 0; /* No spacing between grid items */
+    row-gap: 0; /* Ensure no spacing between rows */
+    max-width: 1152px; /* Optional: Set maximum width */
+    margin: 100px auto; /* Center the gallery */
+    padding: 4%;
+}
+
+.picture-item {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+}
+
+.picture-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container */
+    display: block; /* Remove default image spacing */
+}
+
 /* Footer */
 footer {
     display: flex;

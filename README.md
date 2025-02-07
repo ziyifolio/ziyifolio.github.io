@@ -27,5 +27,6 @@ TODO
 - Add sustainovation project
     -change project page name to lower case
 - Concept playground gallery
+    -add hover effect
 - Hero animation hover effect
 
