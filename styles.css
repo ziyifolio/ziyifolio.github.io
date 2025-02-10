@@ -350,10 +350,11 @@ header .logo-title img.logo {
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 0; /* No spacing between grid items */
     row-gap: 0; /* Ensure no spacing between rows */
-    max-width: 1160px; /* Optional: Set maximum width */
+    /* max-width: 1160px;  */
+    padding: 4%;
     margin: 0 auto; /* Center the gallery */
     margin-bottom: 100px;
-    padding: 4%;
+
 }
 
 .picture-item {
