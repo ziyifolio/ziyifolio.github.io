@@ -209,7 +209,7 @@ header .logo-title img.logo {
 }
 
 /* Gallery Title */
-.gallery-title {
+.section-title {
     color: #302850;           /* Dark03 */
     margin-left: 4%;
     margin-bottom: 40px;      /* Add some space below the title */
@@ -344,18 +344,13 @@ header .logo-title img.logo {
 }
 
 /* Playground */
-.playground-title {
-    color: #302850;           /* Dark03 */
-    margin-left: 4%;
-    text-align: left;         /* Align title to the left */
-}
 
 .picture-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 0; /* No spacing between grid items */
     row-gap: 0; /* Ensure no spacing between rows */
-    max-width: 1152px; /* Optional: Set maximum width */
+    max-width: 1160px; /* Optional: Set maximum width */
     margin: 0 auto; /* Center the gallery */
     margin-bottom: 100px;
     padding: 4%;
