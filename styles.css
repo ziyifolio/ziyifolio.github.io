@@ -93,8 +93,19 @@ header {
     color: #ccc;
 }
 
+.logo-link {
+    text-decoration: none; /* removes underline */
+    color:  inherit;        /* keeps original text color */
+    display: block;        /* makes entire area clickable */
+}
+
+.logo-link:hover {
+    color: #fff;
+}
+
+
 header .logo-title {
-    color: #ccc;
+    /* color: #ccc; */
     display: flex;
     align-items: center;
 }
@@ -464,17 +475,18 @@ footer .linkedin a:hover {
 .skills-section {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;   /* bottom */
     gap: 40px;                   /* Space between each capability group */
     margin-bottom: 40px;
 }
 
 .experience {
-    padding-right: 64px;
+    padding-right: 100px; /* Extra spacing between title areas to other divs */
 }
 
 .skills-section > div {
     flex: 1;
-    min-width: 220px;            /* Ensure minimum width */
+    min-width: 200px;            /* Ensure minimum width */
 }
 
 .skills-section h2 {
@@ -496,7 +508,7 @@ footer .linkedin a:hover {
 .capabilities,
 .toolbox,
 .off-screen{
-    margin-top: 20px;
+    margin-top: 4px; /* Make the divs visually top aligned with the title */
 }
 
 
@@ -537,13 +549,14 @@ footer .linkedin a:hover {
 .info-blocks {
     display: flex;
     flex-wrap: wrap;                  /* Allow wrapping on smaller screens */
-    gap: 3%;                        /* Space between information blocks */
+    gap: 6%;                        /* Space between information blocks */
     justify-content: space-between;   /* Spread out information blocks */
     text-align: left;
 }
 
 .info-block {
     flex: 1;                          /* Allow equal space for each block */
+    margin-top: 40px;
     min-width: 200px;                 /* Ensure a minimum width for blocks */
 }
 
@@ -554,6 +567,7 @@ footer .linkedin a:hover {
 /* Make the "In Short" block twice as wide */
 .info-block.in-short {
     flex: 2;                          /* Make the "In Short" block twice the size */
+    min-width: 320px;
 }
 
 
