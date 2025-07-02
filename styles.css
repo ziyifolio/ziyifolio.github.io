@@ -33,6 +33,12 @@ p {
     /* margin-bottom: 20px; */
 }
 
+.p-non-highlight {
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 80%;
+}
+
 h1 {
     font-family: 'Lato', sans-serif;  /* Set the font to Lato */
     font-size: 4rem;                  /* Set font size to 64px */
@@ -493,10 +499,6 @@ footer .linkedin a:hover {
     margin-bottom: 20px;
 }
 
-.experience p {
-    font-size: 1rem;
-    color: #666;                 /* Light gray text */
-}
 
 
 .skills-section .label{
