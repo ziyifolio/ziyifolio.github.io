@@ -329,7 +329,7 @@ header .logo-title img.logo {
 .image-content img {
     width: 100%;
     max-height: 400px;
-    border-radius: 4px;
+/*    border-radius: 2px; */
     object-fit: cover;
     transition: transform 0.3s ease;
 }
